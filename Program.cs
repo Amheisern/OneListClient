@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace OneListClient
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var client = new HttpClient();
-            var responseAsString = client.GetStringAsync("https://one-list-api.herokuapp.com/items?access_token=sdg-handbook");
+
+            var responseAsString = await client.GetStringAsync("https://one-list-api.herokuapp.com/items?access_token=sdg-handbook");
 
             Console.WriteLine(responseAsString);
-            //this code will happen at the same time as our network request
         }
     }
 }
