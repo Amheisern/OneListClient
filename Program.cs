@@ -2,11 +2,11 @@
 
 namespace OneListClient
 {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      Console.WriteLine("Welcome to C#");
+        static void Main(string[] args)
+        {
+            var client = new HttpClient();
+        }
     }
-  }
 }
