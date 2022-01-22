@@ -19,7 +19,7 @@ namespace OneListClient
             foreach (var item in items)
             {
                 // Output some details on that item
-                Console.WriteLine($"The task {item.text} was created on {item.created_at} and has a completion of: {item.complete}");
+                Console.WriteLine($"The task {item.text} was created on {item.created_at} is {item.CompleteStatus}");
 
             }
         }
