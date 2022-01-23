@@ -21,11 +21,11 @@ namespace OneListClient
         // public DateTime created_at { get; set; }
         // public DateTime updated_at { get; set; }
 
-        public string CompleteStatus
+        public string CompletedStatus
         {
             get
             {
-                return complete ? "Completed" : "Not Complete";
+                return Complete ? "Completed" : "Not Complete";
                 // if (complete)
                 // {
                 //     return "Complete";
